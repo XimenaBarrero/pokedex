@@ -26,11 +26,11 @@ const Pokedex = () => {
   }, [])
 
   useEffect(() => {
-   const URL= "http://pokeapi.co/api/v2/type"
+   const URL = "http://pokeapi.co/api/v2/type"
    axios.get(URL)
    .then(res => setTypes(res.data.results))
    .catch(err => console.log(err))
-  }, [])
+  }, [namePokemon])
 
   useEffect(() => {
     const newPokemons = pokemons.filter(pokemon => pokemon.name.
@@ -46,8 +46,8 @@ const Pokedex = () => {
           <p>Welcome<span>{nameTrainer}</span>, here you can find your favorite pokemon</p>
           <form onSubmit={handleSubmit} className='pokedex-form'>
             <div className='pokedex-search'>
-              <input type="text" />
-              <button>Search</button>
+              <input type="text" id="namePokemon" />
+              <button type="submit">Search</button>
             </div>
             <select className='pokedex-select'>
               <option value="">All Pokemons</option>
