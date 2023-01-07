@@ -19,14 +19,14 @@ const Pokedex = () => {
   }
 
   useEffect(() => {
-    const URL ="http://pokeapi.co/api/v2/pokemon/?limit=30"
+    const URL ="https://pokeapi.co/api/v2/pokemon/?limit=30"
     axios.get(URL)
     .then(res => setPokemons(res.data.results))
     .catch(err => console.log(err))
   }, [])
 
   useEffect(() => {
-   const URL = "http://pokeapi.co/api/v2/type"
+   const URL = "https://pokeapi.co/api/v2/type"
    axios.get(URL)
    .then(res => setTypes(res.data.results))
    .catch(err => console.log(err))
@@ -36,7 +36,7 @@ const Pokedex = () => {
     const newPokemons = pokemons.filter(pokemon => pokemon.name.
       includes(namePokemon))
       setPokemonsFilter(newPokemons)
-  }, [namePokemon])
+  }, [namePokemon, pokemons])
   
 
   return (
