@@ -76,11 +76,11 @@ margin-top: 0;
 }
 
 .border-fighting {
-    border: 10px solid #ff4f23;
+    border: 10px solid #E6901E;
 }
 
 .border-flying{
-    border: 10px solid #beb14c;
+    border: 10px solid #B1DBBC;
 }
 
 .border-poison{
@@ -120,7 +120,7 @@ margin-top: 0;
 }
 
 .border-electric{
-    border: 10px solid #2129d0;
+    border: 10px solid #323569;
 }
 
 .border-psychic{
@@ -159,10 +159,10 @@ margin-top: 0;
     background: linear-gradient(180deg, #735259, #000);
   }
 .border-lg-fighting {
-    background: linear-gradient(180deg, #ff4f23, #000);
+    background: linear-gradient(180deg, #E6901E, #000);
   }
   .border-lg-flying {
-    background: linear-gradient(180deg, #beb14c, #000);
+    background: linear-gradient(180deg, #B1DBBC, #000);
   }
   .border-lg-poison {
     background: linear-gradient(180deg, #4d1981, #000);
@@ -192,7 +192,7 @@ margin-top: 0;
     background: linear-gradient(180deg, #216e52, #000);
   }
   .border-lg-electric {
-    background: linear-gradient(180deg, #2129d0, #000);
+    background: linear-gradient(180deg, #323569, #000);
   }
   .border-lg-psychic {
     background: linear-gradient(180deg, #a40b0b, #000);
