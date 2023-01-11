@@ -3,7 +3,7 @@
     background-color: white;
     border: 10px solid black;
     border-radius: 10px;
-    width: min(270px, 100%);
+    width: min(300px, 100%);
     cursor: pointer;
     transition: 300ms transform ease;
 }
@@ -49,6 +49,7 @@ margin-top: 0;
     display: grid;
     grid-auto-rows: 60px;
     grid-template-columns: repeat(2, 1fr);
+    padding:0 25px;
 }
 
 .pokeCard-stat {
