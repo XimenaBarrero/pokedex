@@ -16,8 +16,6 @@
 .pokemon-id-header {
     height: 160px;
     top:0;
-    width: 100%;
-    background-color: cadetblue;
     margin: 5px;
     width: calc(100%-10px);
 }
@@ -29,15 +27,63 @@
     width: 200px;
     transform: translateX(-50%);
 }
+.pokemon-id-id-box {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
 
 .pokemon-id-id {
-    font-size: 25px;
+    font-size: 30px;
     margin:15px 0 5px 0;
+    padding: 10px;
+    border: solid #D3D3D3;
+    padding: 5px 15px;
 }
+
+.subtitle {
+    margin: 0 0 2em 0;
+}
+
+.fancy{
+    line-height: 0.5;
+    text-align: center;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;  
+}
+
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #9F9F9F;
+    border-top: 1px solid #9F9F9F;
+    top: 0;
+    width: 600px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
 
 .pokemon-id-name {
     margin:0;
+    margin-top: 10px;
     text-transform: capitalize;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .pokemon-id-features {
@@ -75,7 +121,7 @@
 }
 
 
-.pokemon-id-info-title{
+.pokemon-id-info-title {
     margin-bottom: 0;
     color: black;
 }

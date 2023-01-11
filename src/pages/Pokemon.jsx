@@ -25,8 +25,10 @@ const Pokemon = () => {
       <section className='pokemon-id'>
         <section className={`pokemon-id-header border-lg-${dataPokemon?.types[0].type.name}`}></section>
         <img className='pokemon-id-img' src={dataPokemon?.sprites.other["official-artwork"].front_default} alt="" />
-        <h3 className='pokemon-id-id'># {dataPokemon?.id}</h3>
-        <h2 className='pokemon-id-name'>{dataPokemon?.name}</h2>
+        <div className='pokemon-id-id-box'><h3 className='pokemon-id-id'># {dataPokemon?.id}</h3></div>
+        <p className='subtitle fancy'>
+        <span className='pokemon-id-name'>{dataPokemon?.name}</span> 
+        </p>
         <section className='pokemon-id-features'>
           <div className='pokemon-id-feature'>
           <p className='pokemon-id-feature-name'>Weight</p>

@@ -15,6 +15,7 @@
 .pokeCard-header {
     height: 170px;
     background: linear-gradient(180deg,#000, #fff);
+    border: none;
 }
 
 .pokeCard-content{
@@ -29,20 +30,27 @@
 }
 
 .pokeCard-name {
-    padding-top: 15px;
+    padding-top: 25px;
     text-transform: capitalize;
     margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .pokeCard-types {
     margin: 4px 0;
     text-transform: capitalize;
+    color: #4F4F4F;
 }
 
 .pokeCard-types-title {
 color: #9F9F9F;
 font-size: 15px;
 margin-top: 0;
+}
+
+.separation-line{
+  border: 0.5px solid #E5E5E5;
 }
 
 .pokeCard-stats {
@@ -62,15 +70,102 @@ margin-top: 0;
     margin: 0;
     color: #9F9F9F;
     text-transform: uppercase;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .pokeCard-stat-value {
-    margin: 0;
-    font-weight: 600;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+margin: 0;
 }
 
-/* TYPES STYLES  */
+
+/* FONT COLORS */
+
+.font-color-normal {
+  color: #735259;
+}
+
+.font-color-fighting {
+  color: #E6901E;
+}
+
+.font-color-flying{
+  color: #B1DBBC;
+}
+
+.font-color-poison{
+  color: #4d1981;
+}
+
+.font-color-ground{
+  color: #5d3e1f;
+}
+
+.font-color-rock{
+  color: #7E7E7E;
+}
+
+.font-color-bug{
+  color: #0e3f28;
+}
+
+.font-color-ghost{
+  color: #323569;
+}
+
+.font-color-steel{
+  color: #5e736c;
+}
+
+.font-color-fire{
+  color: #cb6336;
+}
+
+.font-color-water{
+  color: #0f2e53;
+}
+
+.font-color-grass{
+  color: #216e52;
+}
+
+.font-color-electric{
+  color: #323569;
+}
+
+.font-color-psychic{
+  color: #a40b0b;
+}
+
+.font-color-ice{
+  color: #93b1bc;
+}
+
+.font-color-dragon{
+  color: #82b4a5;
+}
+
+.font-color-dark{
+  color:#030706;
+}
+
+.font-color-fairy{
+  color: #bc5fb6;
+}
+
+.font-color-unknown{
+  color: #74575d;
+}
+
+.font-color-shadow{
+  color: #845fa7;
+}
+
+
+/* TYPES STYLES */
 
 .border-normal {
     border: 10px solid #735259;
@@ -112,7 +207,7 @@ margin-top: 0;
     border: 10px solid #cb6336;
 }
 
-.bg-water{
+.border-water{
     border: 10px solid #0f2e53;
 }
 
