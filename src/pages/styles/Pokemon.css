@@ -27,21 +27,18 @@
     width: 200px;
     transform: translateX(-50%);
 }
-.pokemon-id-id-box {
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-}
 
 .pokemon-id-id {
-    font-size: 30px;
-    margin:15px 0 5px 0;
-    padding: 10px;
+    display: inline;
+    justify-content: center;
+    font-size: 40px;
+    margin:25px ;
     border: solid #D3D3D3;
     padding: 5px 15px;
 }
 
 .subtitle {
+    display: inline;
     margin: 0 0 2em 0;
 }
 
@@ -82,27 +79,20 @@
     margin-top: 10px;
     text-transform: capitalize;
     display: inline-block;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: 500;
 }
 
 .pokemon-id-features {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
-.pokemon-id-feature {
-    font-size: 12px;
-}
-
-.pokemon-id-feature-name {
+.pokemon-id-feature > p {
     margin: 10px 0 0 0;
-}
-
-.pokemon-id-feature-value {
-    margin: 4px 0 0 0;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .pokemon-id-info {
@@ -110,6 +100,8 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .pokemon-id-info-container {
@@ -122,6 +114,7 @@
 
 
 .pokemon-id-info-title {
+    display: inline;
     margin-bottom: 0;
     color: black;
 }
@@ -142,7 +135,8 @@
 }
 
 .pokemon-id-stats {
-    padding: 0 25px 30px 25px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .pokemon-id-info-title {
@@ -157,17 +151,24 @@
 
 .pokemon-id-stat-name {
     text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.pokemon-id-stat-value{
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .pokemon-id-stat-bar {
-    height: 20px;
+    height: 34px;
     width: 100%;
     background-color: #f6f6f6;
 }
 
 .pokemon-id-stat-barProgress {
     background: linear-gradient(90deg,#FCD676, #E6901E );
-    height: 25px;
+    height: 34px;
     width: 60%;
 }
 
@@ -253,3 +254,87 @@
 .bg-shadow{
     background:#845fa7;
 }
+
+
+/* FONT COLORS */
+
+.font-color-normal {
+    color: #735259;
+  }
+  
+  .font-color-fighting {
+    color: #E6901E;
+  }
+  
+  .font-color-flying{
+    color: #B1DBBC;
+  }
+  
+  .font-color-poison{
+    color: #4d1981;
+  }
+  
+  .font-color-ground{
+    color: #5d3e1f;
+  }
+  
+  .font-color-rock{
+    color: #7E7E7E;
+  }
+  
+  .font-color-bug{
+    color: #0e3f28;
+  }
+  
+  .font-color-ghost{
+    color: #323569;
+  }
+  
+  .font-color-steel{
+    color: #5e736c;
+  }
+  
+  .font-color-fire{
+    color: #cb6336;
+  }
+  
+  .font-color-water{
+    color: #0f2e53;
+  }
+  
+  .font-color-grass{
+    color: #216e52;
+  }
+  
+  .font-color-electric{
+    color: #323569;
+  }
+  
+  .font-color-psychic{
+    color: #a40b0b;
+  }
+  
+  .font-color-ice{
+    color: #93b1bc;
+  }
+  
+  .font-color-dragon{
+    color: #82b4a5;
+  }
+  
+  .font-color-dark{
+    color:#030706;
+  }
+  
+  .font-color-fairy{
+    color: #bc5fb6;
+  }
+  
+  .font-color-unknown{
+    color: #74575d;
+  }
+  
+  .font-color-shadow{
+    color: #845fa7;
+  }
+  

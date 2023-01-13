@@ -25,23 +25,25 @@ const Pokemon = () => {
       <section className='pokemon-id'>
         <section className={`pokemon-id-header border-lg-${dataPokemon?.types[0].type.name}`}></section>
         <img className='pokemon-id-img' src={dataPokemon?.sprites.other["official-artwork"].front_default} alt="" />
-        <div className='pokemon-id-id-box'><h3 className='pokemon-id-id'># {dataPokemon?.id}</h3></div>
-        <p className='subtitle fancy'>
-        <span className='pokemon-id-name'>{dataPokemon?.name}</span> 
+        <br></br>
+        <h3 className= {`pokemon-id-id font-color-${dataPokemon?.types[0].type.name}`}># {dataPokemon?.id}</h3>
+        <p className='title-lines'>
+        <span className={`pokemon-id-name font-color-${dataPokemon?.types[0].type.name}`}>{dataPokemon?.name}</span> 
         </p>
         <section className='pokemon-id-features'>
           <div className='pokemon-id-feature'>
           <p className='pokemon-id-feature-name'>Weight</p>
-          <p className='pokemon-id-feature-value'>{dataPokemon?.weight}</p>
+          <p className='pokemon-id-feature-value'><b>{dataPokemon?.weight}</b></p>
           </div>
           <div className='pokemon-id-feature'>
           <p className='pokemon-id-feature-name'>Height</p>
-          <p className='pokemon-id-feature-value'>{dataPokemon?.height}</p>
+          <p className='pokemon-id-feature-value'><b>{dataPokemon?.height}</b></p>
           </div>
           </section>
+          <br></br>
         <section className='pokemon-id-info'>
           <div className='pokemon-id-info-container'>
-            <h4 className='pokemon-id-info-title'>Types</h4>
+            <h4 className='pokemon-id-info-title'>Type</h4>
             <div className='pokemon-id-info-data'>
             {
               dataPokemon?.types.map(type => <p className=
@@ -61,6 +63,7 @@ const Pokemon = () => {
             </div>
             </div>
         </section>
+        <br></br>
         <section className='pokemon-id-stats'>
           <h3 className='pokemon-stats-title'>Stats</h3>
           <div className='pokemon-stats-container'>
@@ -78,6 +81,8 @@ const Pokemon = () => {
                 </div>
               ))
             }
+            <br></br>
+            <br></br>
           </div>
         </section>
       </section>
